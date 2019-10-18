@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 // 3. retrieve a specfic exercise log
 // GET: /:id
 // ========================================
-router.get("/find/:id", (req, res) => {
+router.get("/:id", (req, res) => {
     Exercise.findOne().then(data=>res.json(data)).catch(err=>console.log(err));
   });
 
