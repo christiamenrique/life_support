@@ -33,5 +33,9 @@
 * Concurrently - Used to run servers at the same time
 * Heroku - App deployment
 
+# Link to Heroku
+
+* https://dashboard.heroku.com/apps/life-support-challenge
+
 # Author
 * Christiam Hernandez
