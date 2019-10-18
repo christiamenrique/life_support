@@ -52,21 +52,21 @@ router.delete("/:id",async (req, res) => {
 // with information sent by client on req body
 // POST: /update/:id
 // ========================================
-router.post("/update/:id", (req, res) => {
-    Exercise.updateOne(
-      {
-        _id: req.params.id
-      },
-      {
+
+router.post('/update/:id', async (req, res) => {
+    const updateRec = await Exercise.updateOne(
+        { _id: req.params.id }, {
         $set: {
-          username: req.body.username,
-          description: req.body.description,
-          duration: req.body.duration,
-          date: req.body.date,
+            username: req.body.username,
+            description: req.body.description,
+            duration: req.body.duration,
+            date: Date.now()
         }
-      },{new: true}
-    ).then(data=> res.json(data).catch(err=> console.error(err)))}
-    );
+    }, { new: true }
+    )
+    console.log(req.params.id)
+    res.send(updateRec)
+})
   
 
 
