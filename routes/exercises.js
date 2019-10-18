@@ -63,7 +63,6 @@ router.post("/update/:id", (req, res) => {
           description: req.body.description,
           duration: req.body.duration,
           date: req.body.date,
-          timestamps: Date.now()
         }
       },{new: true}
     ).then(data=> res.json(data).catch(err=> console.error(err)))}
