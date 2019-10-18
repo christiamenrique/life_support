@@ -11,6 +11,10 @@
 * Open terminal
 * git clone
 * install the node packages using (npm install). 
+* Create Atlas account to storage date online.
+* Create Heroku account to starage web page.
+* Download Heroku to local mechine.
+* creating a heroku cli
 * Create an .env file with the PORT that the server will be running on.
 * Add LOCAL_URI on the .env to store data locally.
 * Add ATLAS_URI on the .env to store data on Atlas.
