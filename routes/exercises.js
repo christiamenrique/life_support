@@ -53,20 +53,21 @@ router.delete("/:id",async (req, res) => {
 // POST: /update/:id
 // ========================================
 
-router.post('/update/:id', async (req, res) => {
-    const update = await Exercise.updateOne(
-        { _id: req.params.id }, {
+router.post("/update/:id", (req, res) => {
+    Exercise.updateOne(
+      {
+        _id: req.params.id
+      },
+      {
         $set: {
-            username: req.body.username,
-            description: req.body.description,
-            duration: req.body.duration,
-            date: Date.now()
+          username: req.body.username,
+          description: req.body.description,
+          duration: req.body.duration,
+          date: req.body.date
         }
-    }, { new: true }
-    )
-    console.log(req.params.id)
-    res.send(update)
-})
+      },{new: true}
+    ).then(data=> res.json(data).catch(err=> console.error(err)))}
+    );
   
 
 
