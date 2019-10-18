@@ -11,7 +11,7 @@
 * Open terminal
 * git clone
 * install the node packages using (npm install). 
-* Create an .env file with the PORT that the server will be running.
+* Create an .env file with the PORT that the server will be running on.
 * Add LOCAL_URI on the .env to store data locally.
 * Add ATLAS_URI on the .env to store data on Atlas.
 
