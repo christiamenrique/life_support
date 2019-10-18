@@ -9,7 +9,7 @@
 # Install
 
 * Open terminal
-* git clone
+* git clone https://github.com/christiamenrique/life_support.git
 * install the node packages using (npm install). 
 * Create Atlas account to storage date online.
 * Create Heroku account to starage web page.
