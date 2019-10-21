@@ -35,7 +35,7 @@
 
 # Link to Heroku
 
-* https://dashboard.heroku.com/apps/life-support-challenge
+* https://life-support-challenge.herokuapp.com/
 
 # Author
 * Christiam Hernandez
